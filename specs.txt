@@ -1,0 +1,165 @@
+Linux raspberrypi 5.17.0-rc3-next-20220207-g5bd2d473f01f #77 SMP PREEMPT Sun Feb 13 12:31:42 CET 2022 armv7l GNU/Linux
+-------------------------------------------------------------------
+Linux version 5.17.0-rc3-next-20220207-g5bd2d473f01f (leander@LeanderGlandaUbuntu) (arm-linux-gnueabihf-gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, GNU ld (GNU Binutils) 2.37) #77 SMP PREEMPT Sun Feb 13 12:31:42 CET 2022
+-------------------------------------------------------------------
+PRETTY_NAME="Raspbian GNU/Linux 13 (trixie)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.2
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+------------------------------------------------------------------
+No LSB modules are available.
+Distributor ID:	Raspbian
+Description:	Raspbian GNU/Linux 13 (trixie)
+Release:	13
+Codename:	trixie
+------------------------------------------------------------------
+processor	: 0
+model name	: ARMv7 Processor rev 9 (v7l)
+BogoMIPS	: 2.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc09
+CPU revision	: 9
+
+processor	: 1
+model name	: ARMv7 Processor rev 9 (v7l)
+BogoMIPS	: 2.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc09
+CPU revision	: 9
+
+processor	: 2
+model name	: ARMv7 Processor rev 9 (v7l)
+BogoMIPS	: 2.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc09
+CPU revision	: 9
+
+processor	: 3
+model name	: ARMv7 Processor rev 9 (v7l)
+BogoMIPS	: 2.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc09
+CPU revision	: 9
+
+Hardware	: NVIDIA Tegra SoC (Flattened Device Tree)
+Revision	: 0000
+Serial		: 0000000000000000
+---------------------------------------------------------------
+/sys/firmware/devicetree/model: No such file or directory
+---------------------------------------------------------------
+Architecture:           armv7l
+  Byte Order:           Little Endian
+CPU(s):                 4
+  On-line CPU(s) list:  0-3
+Vendor ID:              0x41
+  Model name:           ARMv7 Processor rev 9 (v7l)
+    Model:              9
+    Thread(s) per core: 1
+    Core(s) per socket: 4
+    Socket(s):          1
+    Stepping:           0x2
+    BogoMIPS:           2.00
+    Flags:              half thumb fastmult vfp edsp neon vfpv3 tls vfpd32
+----------------------------------------------------------------               
+	       total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       304Mi       1.2Gi        32Mi       619Mi       1.6Gi
+Swap:             0B          0B          0B
+----------------------------------------------------------------
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  9.2G   18G  35% /
+devtmpfs        948M     0  948M   0% /dev
+tmpfs           981M  348K  981M   1% /dev/shm
+tmpfs           393M  8.2M  385M   3% /run
+tmpfs           5.0M   12K  5.0M   1% /run/lock
+/dev/loop0       90M   90M     0 100% /snap/core/17274
+/dev/loop1      128K  128K     0 100% /snap/hello-world/29
+/dev/loop2       40M   40M     0 100% /snap/snapd/25938
+/dev/mmcblk0p1  511M  105M  407M  21% /boot/firmware
+tmpfs           981M  4.0K  981M   1% /tmp
+tmpfs           197M   76K  197M   1% /run/user/1000
+---------------------------------------------------------------
+NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0          7:0    0   90M  1 loop /snap/core/17274
+loop1          7:1    0   20K  1 loop /snap/hello-world/29
+loop2          7:2    0 39.6M  1 loop /snap/snapd/25938
+loop3          7:3    0  1.9G  0 loop 
+mmcblk0      179:0    0 29.1G  0 disk 
+â”œâ”€mmcblk0p1  179:1    0  512M  0 part /boot/firmware
+â””â”€mmcblk0p2  179:2    0 28.6G  0 part /
+mmcblk0boot0 179:16   0    2M  1 disk 
+mmcblk0boot1 179:32   0    2M  1 disk 
+---------------------------------------------------------------
+surface-rt-ac-adapter  surface-rt-battery
+---------------------------------------------------------------
+MemTotal:        2008040 kB
+MemFree:         1234140 kB
+MemAvailable:    1704032 kB
+Buffers:           30516 kB
+Cached:           565344 kB
+SwapCached:            0 kB
+Active:           134520 kB
+Inactive:         566304 kB
+Active(anon):       1612 kB
+Inactive(anon):   134368 kB
+Active(file):     132908 kB
+Inactive(file):   431936 kB
+Unevictable:       12364 kB
+Mlocked:               0 kB
+HighTotal:       1257192 kB
+HighFree:         563184 kB
+LowTotal:         750848 kB
+LowFree:          670956 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                56 kB
+Writeback:             0 kB
+AnonPages:        117336 kB
+Mapped:           175084 kB
+Shmem:             31008 kB
+KReclaimable:      22216 kB
+Slab:              37448 kB
+SReclaimable:      22216 kB
+SUnreclaim:        15232 kB
+KernelStack:        2288 kB
+PageTables:         4448 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1004020 kB
+Committed_AS:    1548328 kB
+VmallocTotal:     245760 kB
+VmallocUsed:        3568 kB
+VmallocChunk:          0 kB
+Percpu:              496 kB
+CmaTotal:          65536 kB
+CmaFree:           64772 kB
+--------------------------------------------------------------
+Can't open device file: /dev/vcio
+Try creating a device file with: sudo mknod /dev/vcio c 100 0
+--------------------------------------------------------------
+armhf
+--------------------------------------------------------------
+Module                  Size  Used by
+mwifiex_sdio           32768  0
+mwifiex               237568  1 mwifiex_sdio
+tegra30_tsensor        16384  0
+efivarfs               16384  0
