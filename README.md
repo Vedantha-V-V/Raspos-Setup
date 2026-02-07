@@ -11,6 +11,8 @@ curl https://raw.githubusercontent.com<username>/<repository>/<branch>/<path/to/
 
 ## Directory Tree
 
+```bash
+
 └── Raspos-Setup/
     ├── checkspecs.md
     ├── docker.md
@@ -18,3 +20,5 @@ curl https://raw.githubusercontent.com<username>/<repository>/<branch>/<path/to/
     ├── moltbot.md
     ├── README.md
     └── specs.txt
+    
+```
