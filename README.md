@@ -14,6 +14,7 @@ curl https://raw.githubusercontent.com<username>/<repository>/<branch>/<path/to/
 ```bash
 
 └── Raspos-Setup/
+    ├── anime.md
     ├── checkspecs.md
     ├── docker.md
     ├── installations.md
