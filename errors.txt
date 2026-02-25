@@ -1,0 +1,41 @@
+× docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Wed 2026-02-25 22:39:23 IST; 6s ago
+ Invocation: 1fdd493a370e405ea337c22c0593fae3
+TriggeredBy: × docker.socket
+       Docs: https://docs.docker.com
+    Process: 3076 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock (code=exited, status=1/FAILURE)
+   Main PID: 3076 (code=exited, status=1/FAILURE)
+
+Feb 25 22:39:23 raspberrypi systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+Feb 25 22:39:23 raspberrypi systemd[1]: docker.service: Start request repeated too quickly.
+Feb 25 22:39:23 raspberrypi systemd[1]: docker.service: Failed with result 'exit-code'.
+Feb 25 22:39:23 raspberrypi systemd[1]: Failed to start docker.service - Docker Application Container Engine.
+
+
+Support: https://www.debian.org/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+Feb 25 22:39:23 raspberrypi systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 25 22:39:23 raspberrypi systemd[1]: docker.service: Start request repeated too quickly.
+Feb 25 22:39:23 raspberrypi systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Feb 25 22:39:23 raspberrypi systemd[1]: Failed to start docker.service - Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 3157 and the job result is failed.
+~
