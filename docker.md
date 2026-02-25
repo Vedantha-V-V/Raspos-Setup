@@ -88,3 +88,17 @@ sudo reboot
 sudo systemctl start docker
 docker run hello-world
 ```
+
+### Docker Fix
+
+```bash
+sudo systemctl stop docker docker.socket
+sudo rm -rf /var/lib/docker /var/lib/containerd /run/containerd /run/docker*
+
+sudo apt install iptables iptables-legacy containerd.io -y
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+
+sudo systemctl daemon-reload
+sudo systemctl start containerd
+sudo systemctl start docker
+```
