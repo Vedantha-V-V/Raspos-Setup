@@ -61,7 +61,7 @@ sudo update-grub && sudo reboot
 ```
 
 
-### Docker Fix Final
+### Docker Fix Checkpoint-1
 
 ```bash
 # Kill bad state
@@ -89,7 +89,7 @@ sudo systemctl start docker
 docker run hello-world
 ```
 
-### Docker Fix
+### Docker Fix Checkpoint-2
 
 ```bash
 sudo systemctl stop docker docker.socket
@@ -101,4 +101,21 @@ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 sudo systemctl daemon-reload
 sudo systemctl start containerd
 sudo systemctl start docker
+```
+
+### Docker Fix Checkpoint-3
+
+```bash
+# Nuke old install
+sudo apt purge docker* containerd* -y
+sudo rm -rf /etc/apt/sources.list.d/docker*
+
+# Correct Trixie repo (your exact version)
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh --version trixie
+
+# Or manual (bulletproof)
+echo "deb [arch=armhf] https://download.docker.com/linux/debian trixie stable" | sudo tee /etc/apt/sources.list.d/docker.list
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io -y
 ```
