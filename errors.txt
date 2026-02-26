@@ -39,3 +39,11 @@ Feb 25 22:39:23 raspberrypi systemd[1]: Failed to start docker.service - Docker 
 ░░ 
 ░░ The job identifier is 3157 and the job result is failed.
 ~
+
+Warning: OpenPGP signature verification failed: https://download.docker.com/linux/debian trixie InRelease: Sub-process /usr/bin/sqv returned an error code (1), error message is: Missing key 7EA0A9C3F273FCD8, which is needed to verify signature.
+Error: The repository 'https://download.docker.com/linux/debian trixie InRelease' is not signed.
+Notice: Updating from such a repository can't be done securely, and is therefore disabled by default.
+Notice: See apt-secure(8) manpage for repository creation and user configuration details.
+
+Error: Unable to locate package waydroid
+bash: waydroid: command not found
