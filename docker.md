@@ -119,3 +119,15 @@ echo "deb [arch=armhf] https://download.docker.com/linux/debian trixie stable" |
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io -y
 ```
+
+## Docker Fix Checkpoint-4
+
+```bash
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+# Update repo line (sudo nano /etc/apt/sources.list.d/docker.list):
+deb [arch=armhf signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian trixie stable
+
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+```

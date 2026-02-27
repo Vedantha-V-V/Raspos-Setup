@@ -16,6 +16,10 @@ sudo apt install foliate evince zathura
 sudo apt install matchbox-window-manager
 
 # APK testing via Waydroid (works!)
-sudo apt install waydroid
-waydroid init
+# Install Anbox instead (APK testing, lighter)
+sudo apt install snapd
+sudo snap install --devmode --beta anbox
+
+# Test APK
+anbox app-install ~/test.apk
 ```
